@@ -30,7 +30,7 @@ app.use('/api/v1/transactions', transactions);
 const PORT = process.env.PORT || 5000;
 
 
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
   console.log("Working")
 })
 app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold));
